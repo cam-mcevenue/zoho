@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import "./app.css";
-  import Tester from "../../../shared/Tester.svelte";
+  import Tester from "@shared/components/Tester.svelte";
 
   onMount(() => {
     ZOHO.embeddedApp.init();

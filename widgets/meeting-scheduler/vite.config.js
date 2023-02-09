@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import { svelte } from "@sveltejs/vite-plugin-svelte";
 import zipPack from "vite-plugin-zip-pack";
-const path = require("path");
+import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,6 +12,8 @@ export default defineConfig({
   },
   base: "",
   resolve: {
-    alias: {},
+    alias: {
+      "@shared": path.resolve(__dirname, "../../shared"),
+    },
   },
 });
