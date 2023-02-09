@@ -7,5 +7,7 @@ export default defineConfig({
   plugins: [svelte(), zipPack()],
   build: {
     outDir: "dist/app",
+    emptyOutDir: true,
   },
+  base: "",
 });
