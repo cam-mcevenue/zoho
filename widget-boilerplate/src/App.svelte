@@ -1,5 +1,10 @@
 <script>
+  import { onMount } from "svelte";
   import "./app.css";
+
+  onMount(() => {
+    ZOHO.embeddedApp.init();
+  });
 </script>
 
 <svelte:head>
