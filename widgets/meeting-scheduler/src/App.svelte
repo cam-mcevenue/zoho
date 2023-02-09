@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import "./app.css";
+  import Tester from "../../../shared/Tester.svelte";
 
   onMount(() => {
     ZOHO.embeddedApp.init();
@@ -15,3 +16,4 @@
 </svelte:head>
 
 <h1>Svelte + Tailwind CSS + Zoho SDK Skeleton</h1>
+<Tester />
